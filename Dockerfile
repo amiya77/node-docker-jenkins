@@ -1,5 +1,5 @@
 FROM node:latest
 WORKDIR /apps
-ADD . .
+COPY . .
 RUN npm install
 CMD ["node", "index.js"]
